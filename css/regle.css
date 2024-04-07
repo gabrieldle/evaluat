@@ -1,0 +1,235 @@
+/* Styles de base pour les appareils mobiles */
+body {
+    font-size: 16px;
+    /* Autres styles */
+}
+
+/* Media query pour les appareils de taille tablette */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+        /* Autres ajustements de mise en page */
+    }
+}
+
+/* Media query pour les appareils de taille desktop */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        /* Autres ajustements de mise en page */
+    }
+}
+
+/* Réinitialisation CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    color: #fff;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    /* Assure que la barre de navigation occupe toute la largeur */
+}
+
+.main-navigation .logo img {
+    height: 40px;
+}
+
+.main-navigation .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation .menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.main-navigation .menu ul li:first-child {
+    margin-left: 0;
+}
+
+.main-navigation .menu ul li:last-child {
+    margin-left: auto;
+    /* Pour aligner le bouton de connexion à droite */
+}
+
+.main-navigation .menu ul li:last-child a {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-navigation .menu ul li:last-child a:hover {
+    background-color: #ccc;
+}
+
+
+.main-navigation .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.main-navigation ul li a:hover {
+    color: #007bff;
+    /* Changement de couleur au survol */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 200px;
+}
+
+.dropdown-menu ul {
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu ul li a:hover {
+    color: #999;
+}
+
+
+aside {
+    background-color: #fff;
+    padding: 20px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Styles de base pour les appareils mobiles */
+body {
+    font-size: 16px;
+    /* Autres styles pour les appareils mobiles */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Utilisation de la hauteur de l'écran */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    /* Espacement égal entre les éléments */
+    align-items: flex-start;
+    /* Alignement du haut */
+    padding: 20px;
+}
+
+section {
+    flex: 1;
+    /* Pour que le texte prenne autant d'espace que possible */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Balises sémantiques */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* Styles spécifiques pour les images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.rules {
+    max-width: 800px;
+    margin: auto;
+    /* Pour centrer le bloc entier */
+}

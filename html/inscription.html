@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+
+<body>
+    <title>Formulaire</title>
+
+    <header>
+
+        <nav class="main-navigation">
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../html/engagement.html">Nos Engagement</a></li>
+                    <li class="dropdown">
+                        <a href="regle.html">l'art de l'echec</a>
+
+                    <li><a href="../html/index.html">Revenir à l'accueil</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <style>
+        /* Style CSS pour le formulaire */
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        /* Ajout du champ pour le numéro de téléphone */
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    </head>
+
+
+    <form id="myForm" action="" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="name">Prenom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Téléphone :</label> <!-- Champ pour le numéro de téléphone -->
+        <input type="tel" id="phone" name="phone" required>
+
+        <a href="../html/validation.html" class="button">Envoyer</a>
+
+    </form>
+
+    </style>
+    <footer>
+        <p>&copy; 2024 Les Pions Majeurs. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
